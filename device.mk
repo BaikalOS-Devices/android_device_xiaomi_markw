@@ -447,6 +447,9 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti \
     libxml2
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qti.pie.telephony=1
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
