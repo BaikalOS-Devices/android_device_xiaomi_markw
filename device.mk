@@ -200,6 +200,10 @@ PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0 \
     android.hardware.automotive.vehicle@2.0-manager-lib
 
+# BaikalParts
+PRODUCT_PACKAGES += \
+     BaikalParts 
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
@@ -539,10 +543,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini::$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/markw/markw-vendor.mk)

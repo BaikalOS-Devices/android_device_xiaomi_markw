@@ -3,7 +3,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_PACKAGE_NAME := XiaomiParts
+LOCAL_PACKAGE_NAME := BaikalParts
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
@@ -12,9 +12,9 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 package_resource_overlays := $(strip \
     $(wildcard $(foreach dir, $(PRODUCT_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/XiaomiParts/res))) \
+      $(addprefix $(dir)/, packages/apps/BaikalParts/res))) \
     $(wildcard $(foreach dir, $(DEVICE_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/XiaomiParts/res))))
+      $(addprefix $(dir)/, packages/apps/BaikalParts/res))))
 
 LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
 
