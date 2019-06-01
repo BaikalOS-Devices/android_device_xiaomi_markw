@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Baikal OS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/baikalos/config/common_full_phone.mk)
 
 # Inherit from markw device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
